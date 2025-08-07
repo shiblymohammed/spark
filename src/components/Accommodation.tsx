@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface Room {
   id: number;
@@ -26,8 +26,10 @@ const AccommodationSection: React.FC = () => {
       size: "35 SQM",
       sizeUnit: "/ 376 SQFT",
       guests: "UP TO 2 ADULTS",
-      description: "Elegant suite featuring heritage furniture and colonial architecture, offering a glimpse into Thiruvithamkoor's regal past with modern comfort.",
-      image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop"
+      description:
+        "Elegant suite featuring heritage furniture and colonial architecture, offering a glimpse into Thiruvithamkoor's regal past with modern comfort.",
+      image:
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
     },
     {
       id: 2,
@@ -38,8 +40,10 @@ const AccommodationSection: React.FC = () => {
       size: "45 SQM",
       sizeUnit: "/ 484 SQFT",
       guests: "UP TO 2 ADULTS AND 1 CHILD",
-      description: "Named after the original bungalow, this spacious room features individual verandas and authentic colonial design elements with garden views.",
-      image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop"
+      description:
+        "Named after the original bungalow, this spacious room features individual verandas and authentic colonial design elements with garden views.",
+      image:
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
     },
     {
       id: 3,
@@ -50,8 +54,10 @@ const AccommodationSection: React.FC = () => {
       size: "60 SQM",
       sizeUnit: "/ 645 SQFT",
       guests: "UP TO 4 ADULTS",
-      description: "A tribute to the Travancore kingdom, featuring separate living areas and authentic heritage furniture with indoor courtyard views.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+      description:
+        "A tribute to the Travancore kingdom, featuring separate living areas and authentic heritage furniture with indoor courtyard views.",
+      image:
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop",
     },
     {
       id: 4,
@@ -62,8 +68,10 @@ const AccommodationSection: React.FC = () => {
       size: "85 SQM",
       sizeUnit: "/ 914 SQFT",
       guests: "UP TO 6 ADULTS",
-      description: "Named after Eunice Gomez, this premium suite offers panoramic views of the heritage garden and exclusive personalized service.",
-      image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop"
+      description:
+        "Named after Eunice Gomez, this premium suite offers panoramic views of the heritage garden and exclusive personalized service.",
+      image:
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
     },
     {
       id: 5,
@@ -74,44 +82,75 @@ const AccommodationSection: React.FC = () => {
       size: "120 SQM",
       sizeUnit: "/ 1291 SQFT",
       guests: "UP TO 8 ADULTS",
-      description: "The crown jewel of our heritage collection, featuring private terrace, butler service, and the finest colonial opulence with modern luxury.",
-      image: "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop"
-    }
+      description:
+        "The crown jewel of our heritage collection, featuring private terrace, butler service, and the finest colonial opulence with modern luxury.",
+      image:
+        "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-primary-bg py-16">
+    <div className="min-h-screen bg-heritage-bg-accent py-16">
       {/* Header */}
       <div className="text-center pt-16 pb-12">
-        <h1 className="text-5xl lg:text-7xl font-light text-primary-text mb-8 px-6 font-serif">
+        <h1 className="text-5xl lg:text-7xl font-light text-primary-title mb-8 px-6 font-serif">
           Five Heritage Rooms
           <br />
           Colonial Elegance
         </h1>
-        <p className="text-primary-text/80 text-lg lg:text-xl max-w-4xl mx-auto px-6 leading-relaxed">
-          Each uniquely styled room tells a story of Thiruvithamkoor's colonial past, 
-          featuring heritage furniture and authentic architecture that seamlessly blends with history.
+        <p className="text-text-secondary-title/80 text-lg lg:text-xl max-w-4xl mx-auto px-6 leading-relaxed">
+          Each uniquely styled room tells a story of Thiruvithamkoor's colonial
+          past, featuring heritage furniture and authentic architecture that
+          seamlessly blends with history.
         </p>
-        
+
         {/* Decorative SVG Element with Extending Lines */}
         <div className="flex items-center justify-center mt-16 mb-12">
           {/* Left Line */}
           <div className="flex-1 h-px bg-primary-text/30 mx-8"></div>
-          
+
           {/* SVG Element */}
-          <div className="flex-shrink-0">
-            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <div className="flex-shrink-0 text-text-primary-title">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g transform="translate(100,100)">
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(60)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(120)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(180)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(240)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(300)" />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(60)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(120)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(180)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(240)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(300)"
+                />
               </g>
             </svg>
           </div>
-          
+
           {/* Right Line */}
           <div className="flex-1 h-px bg-primary-text/30 mx-8"></div>
         </div>
@@ -123,34 +162,40 @@ const AccommodationSection: React.FC = () => {
           {rooms.map((room, index) => {
             const isEven = index % 2 === 0;
             const isHovered = hoveredRoom === room.id;
-            
+
             return (
               <div
                 key={room.id}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[600px] border-1 border-primary-text p-5 relative cursor-pointer transition-all duration-500 ease-out hover:scale-105 hover:shadow-2xl ${
-                  isEven ? '' : 'lg:grid-flow-col-dense'
-                } ${isHovered ? 'scale-105 shadow-2xl border-primary-text/80' : 'scale-100 shadow-none'}`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-0 min-h-[600px] border-0 border-text-primary-title p-5 relative cursor-pointer transition-all duration-500 ease-out hover:scale-105 hover:shadow-2xl ${
+                  isEven ? "" : "lg:grid-flow-col-dense"
+                } ${
+                  isHovered
+                    ? "scale-105 shadow-2xl border-primary-text/80"
+                    : "scale-100 shadow-none"
+                }`}
                 onMouseEnter={() => setHoveredRoom(room.id)}
                 onMouseLeave={() => setHoveredRoom(null)}
               >
                 {/* Image Section */}
-                <div 
-                  className={`relative overflow-hidden bg-gray-800 border-2 border-primary-text ${
-                    isEven ? 'lg:order-1' : 'lg:order-2'
+                <div
+                  className={`relative overflow-hidden bg-gray-800 border-2 border-text-primary-title ${
+                    isEven ? "lg:order-1" : "lg:order-2"
                   }`}
                 >
                   <img
                     src={room.image}
                     alt={room.title}
                     className={`w-full h-full object-cover min-h-[400px] lg:min-h-[500px] transition-transform duration-700 ease-out ${
-                      isHovered ? 'scale-110' : 'scale-100'
+                      isHovered ? "scale-110" : "scale-100"
                     }`}
                   />
-                  
+
                   {/* Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-r from-slate-900/20 to-transparent transition-opacity duration-500 ${
-                    isHovered ? 'opacity-30' : 'opacity-50'
-                  }`} />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-r from-black/20 to-transparent transition-opacity duration-500 ${
+                      isHovered ? "opacity-30" : "opacity-50"
+                    }`}
+                  />
 
                   {/* Floating Room Number */}
                   {/* <div className={`absolute top-6 left-6 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center transition-all duration-300 ${
@@ -163,72 +208,107 @@ const AccommodationSection: React.FC = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className={`bg-primary-bg p-8 lg:p-12 flex flex-col justify-center relative transition-all duration-500 ${
-                  isEven ? 'lg:order-2' : 'lg:order-1'
-                } ${isHovered ? 'bg-primary-bg/80' : ''}`}>
-                  
+                <div
+                  className={`bg-primary-bg p-8 lg:p-12 flex flex-col justify-center relative transition-all duration-500 ${
+                    isEven ? "lg:order-2" : "lg:order-1"
+                  } ${isHovered ? "bg-primary-bg/80" : ""}`}
+                >
                   {/* Room Type Label */}
                   <div className="mb-6">
-                    <span className="text-xs tracking-[0.2em] text-primary-text font-light">
+                    <span className="text-xs tracking-[0.2em] text-primary-text-title font-light">
                       {room.type}
                     </span>
                   </div>
 
                   {/* Room Title */}
-                  <h2 className={`text-3xl lg:text-4xl xl:text-5xl font-light text-primary-text mb-8 font-serif transition-all duration-300 ${
-                    isHovered ? 'scale-105 tracking-wider' : 'scale-100'
-                  }`}>
+                  <h2
+                    className={`text-3xl lg:text-4xl xl:text-5xl font-light text-primary-text-title mb-8 font-serif transition-all duration-300 ${
+                      isHovered ? "scale-105 tracking-wider" : "scale-100"
+                    }`}
+                  >
                     {room.title}
                   </h2>
 
                   {/* Room Details */}
-                  <div className={`border border-primary-text p-6 mb-8 transition-all duration-300 ${
-                    isHovered ? 'border-primary-text/80 bg-primary-text/5' : ''
-                  }`}>
+                  <div
+                    className={`border border-text-primary-title p-6 mb-8 transition-all duration-300 ${
+                      isHovered
+                        ? "border-primary-text-title/80 bg-primary-text/5"
+                        : ""
+                    }`}
+                  >
                     <div className="grid grid-cols-1 gap-4">
                       {/* Price */}
-                      <div className={`flex justify-between items-center transition-transform duration-300 ${
-                        isHovered ? 'translate-x-1' : ''
-                      }`}>
-                        <span className="text-sm text-primary-text font-light">PRICE</span>
+                      <div
+                        className={`flex justify-between items-center transition-transform duration-300 ${
+                          isHovered ? "translate-x-1" : ""
+                        }`}
+                      >
+                        <span className="text-sm text-primary-text-title font-light">
+                          PRICE
+                        </span>
                         <div className="text-right">
-                          <span className="text-primary-text font-light">{room.price}</span>
-                          <span className="text-xs text-primary-text ml-1">{room.priceUnit}</span>
+                          <span className="text-primary-text font-light">
+                            {room.price}
+                          </span>
+                          <span className="text-xs text-primary-text ml-1">
+                            {room.priceUnit}
+                          </span>
                         </div>
                       </div>
-                      
+
                       {/* Size */}
-                      <div className={`flex justify-between items-center transition-transform duration-300 ${
-                        isHovered ? 'translate-x-1' : ''
-                      }`}>
-                        <span className="text-sm text-primary-text font-light">SIZE</span>
+                      <div
+                        className={`flex justify-between items-center transition-transform duration-300 ${
+                          isHovered ? "translate-x-1" : ""
+                        }`}
+                      >
+                        <span className="text-sm text-primary-text-title font-light">
+                          SIZE
+                        </span>
                         <div className="text-right">
-                          <span className="text-primary-text font-light">{room.size}</span>
-                          <span className="text-xs text-primary-text ml-1">{room.sizeUnit}</span>
+                          <span className="text-primary-text-title font-light">
+                            {room.size}
+                          </span>
+                          <span className="text-xs text-primary-text-title ml-1">
+                            {room.sizeUnit}
+                          </span>
                         </div>
                       </div>
-                      
+
                       {/* Guests */}
-                      <div className={`flex justify-between items-center transition-transform duration-300 ${
-                        isHovered ? 'translate-x-1' : ''
-                      }`}>
-                        <span className="text-sm text-primary-text font-light">GUESTS</span>
-                        <span className="text-primary-text font-light">{room.guests}</span>
+                      <div
+                        className={`flex justify-between items-center transition-transform duration-300 ${
+                          isHovered ? "translate-x-1" : ""
+                        }`}
+                      >
+                        <span className="text-sm text-primary-text-title font-light">
+                          GUESTS
+                        </span>
+                        <span className="text-primary-text-title font-light">
+                          {room.guests}
+                        </span>
                       </div>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className={`text-primary-text/80 text-base lg:text-lg leading-relaxed mb-8 font-light transition-opacity duration-300 ${
-                    isHovered ? 'opacity-100' : 'opacity-90'
-                  }`}>
+                  <p
+                    className={`text-primary-text-title/80 text-base lg:text-lg leading-relaxed mb-8 font-light transition-opacity duration-300 ${
+                      isHovered ? "opacity-100" : "opacity-90"
+                    }`}
+                  >
                     {room.description}
                   </p>
 
                   {/* Details Button */}
-                  <button className={`self-start text-sm tracking-[0.15em] text-primary-text border-2 border-primary-text font-normal rounded-md px-3 py-1 transition-all duration-300 ${
-                    isHovered ? 'translate-x-2 tracking-widest border-primary-text/80 text-primary-text/80' : ''
-                  }`}>
+                  <button
+                    className={`self-start text-sm tracking-[0.15em] text-button-accent-bg border-2 border-button-accent-bg font-normal rounded-md px-3 py-1 transition-all duration-300 ${
+                      isHovered
+                        ? "translate-x-2 tracking-widest border-button-accent-bg bg-button-accent-bg text-heritage-bg-accent "
+                        : ""
+                    }`}
+                  >
                     <span className="text-sm">Book Now</span>
                   </button>
 
@@ -253,21 +333,49 @@ const AccommodationSection: React.FC = () => {
         <div className="flex items-center justify-center">
           {/* Left Line */}
           <div className="flex-1 h-px bg-gray-300 mx-8"></div>
-          
+
           {/* SVG Element */}
           <div className="flex-shrink-0">
-            <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g transform="translate(100,100)">
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(60)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(120)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(180)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(240)" />
-                <path d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60" fill="#514f13" transform="rotate(300)" />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(60)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(120)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(180)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(240)"
+                />
+                <path
+                  d="M0,-60 C15,-45 15,-15 0,0 C-15,-15 -15,-45 0,-60"
+                  fill="#514f13"
+                  transform="rotate(300)"
+                />
               </g>
             </svg>
           </div>
-          
+
           {/* Right Line */}
           <div className="flex-1 h-px bg-gray-300 mx-8"></div>
         </div>
@@ -277,10 +385,6 @@ const AccommodationSection: React.FC = () => {
 };
 
 export default AccommodationSection;
-
-
-
-
 
 // import React, { useState, useEffect, useRef } from 'react';
 
@@ -372,12 +476,11 @@ export default AccommodationSection;
 //   return (
 //     <div ref={containerRef} className="bg-primary-bg">
 
-
 //       {/* Section 1: Hero Title */}
 //       <section className="section py-12 md:py-16 px-4 sm:px-6 md:px-12">
 //         <div className="w-full max-w-7xl mx-auto text-center">
 //           <div className="transform transition-all duration-1000">
-//             <h1 
+//             <h1
 //               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-light leading-none mb-4 md:mb-6 font-serif"
 //               style={{color: '#6B7A43'}}
 //             >
@@ -385,7 +488,7 @@ export default AccommodationSection;
 //               <br />
 //               <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Luxury & Nature</span>
 //             </h1>
-            
+
 //             <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10 px-4">
 //               A range of luxurious rooms and villas thoughtfully designed to create harmony between modern comfort and natural beauty, offering you an unforgettable escape.
 //             </p>
@@ -417,7 +520,7 @@ export default AccommodationSection;
 //           {rooms.map((room, index) => {
 //             const isEven = index % 2 === 0;
 //             const isHovered = hoveredRoom === room.id;
-            
+
 //             return (
 //               <div
 //                 key={room.id}
@@ -431,7 +534,7 @@ export default AccommodationSection;
 //                 onMouseLeave={() => setHoveredRoom(null)}
 //               >
 //                 {/* Image Section */}
-//                 <div 
+//                 <div
 //                   className={`relative overflow-hidden bg-primary-text h-full ${
 //                     isEven ? 'lg:order-1' : 'lg:order-2'
 //                   }`}
@@ -443,7 +546,7 @@ export default AccommodationSection;
 //                       isHovered ? 'scale-110' : 'scale-100'
 //                     }`}
 //                   />
-                  
+
 //                   {/* Overlay */}
 //                   <div className={`absolute inset-0 bg-gradient-to-r from-black/30 to-transparent transition-opacity duration-500 ${
 //                     isHovered ? 'opacity-20' : 'opacity-40'
@@ -463,7 +566,7 @@ export default AccommodationSection;
 //                 <div className={`bg-primary-bg p-6 md:p-8 lg:p-12 flex flex-col justify-center relative transition-all duration-500 h-full ${
 //                   isEven ? 'lg:order-2' : 'lg:order-1'
 //                 } ${isHovered ? 'bg-stone-100/80' : ''}`}>
-                  
+
 //                   {/* Room Type Label */}
 //                   <div className="mb-4 md:mb-6">
 //                     <span className="text-xs tracking-[0.2em] font-light" style={{color: '#6B7A43'}}>
@@ -493,7 +596,7 @@ export default AccommodationSection;
 //                           <span className="text-xs text-gray-600 ml-1">{room.priceUnit}</span>
 //                         </div>
 //                       </div>
-                      
+
 //                       {/* Size */}
 //                       <div className={`flex justify-between items-center transition-transform duration-300 ${
 //                         isHovered ? 'translate-x-1' : ''
@@ -504,7 +607,7 @@ export default AccommodationSection;
 //                           <span className="text-xs text-gray-600 ml-1">{room.sizeUnit}</span>
 //                         </div>
 //                       </div>
-                      
+
 //                       {/* Guests */}
 //                       <div className={`flex justify-between items-center transition-transform duration-300 ${
 //                         isHovered ? 'translate-x-1' : ''
@@ -556,14 +659,14 @@ export default AccommodationSection;
 //               of<br className="hidden sm:block" />
 //               privacy, luxury, and nature
 //             </h2>
-            
+
 //             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 md:mb-12 leading-relaxed px-4">
-//               Each space has been thoughtfully designed to create a harmonious balance 
+//               Each space has been thoughtfully designed to create a harmonious balance
 //               between modern luxury and natural beauty, offering you an unforgettable escape.
 //             </p>
 
 //             {/* CTA Button */}
-//             <button 
+//             <button
 //               className="text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-sm md:text-base font-medium transition-all hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2 md:space-x-3 mb-12 md:mb-16"
 //               style={{backgroundColor: '#6B7A43'}}
 //             >
@@ -608,11 +711,6 @@ export default AccommodationSection;
 //           </div>
 //         </div>
 //       </section>
-
-
-
-
-
 
 //     </div>
 //   );

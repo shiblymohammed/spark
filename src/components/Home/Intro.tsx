@@ -313,7 +313,7 @@ const Intro: React.FC = () => {
     <section 
       ref={sectionRef}
       data-section="intro" 
-      className="bg-primary-bg h-[400vh] relative"
+      className="bg-heritage-bg-secondary h-[400vh] relative"
     >
       {/* Fixed content container */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
@@ -329,18 +329,18 @@ const Intro: React.FC = () => {
           <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto text-center">
             
             {/* Small label on top */}
-            <div className="text-primary-text text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] font-light mb-6 sm:mb-8 md:mb-12 lg:mb-16 opacity-70 uppercase font-playfair">
+            <div className="text-text-primary-title text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] font-light mb-6 sm:mb-8 md:mb-12 lg:mb-16 opacity-70 uppercase font-playfair">
               HERITAGE
             </div>
 
             {/* Main Heading */}
-            <h2 className="text-primary-text text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light leading-tight mb-6 sm:mb-8 md:mb-12 lg:mb-16 font-playfair">
+            <h2 className="text-text-primary-title text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light leading-tight mb-6 sm:mb-8 md:mb-12 lg:mb-16 font-playfair">
               <div className="mb-1 sm:mb-2 md:mb-4">Step into</div>
               <div>colonial elegance</div>
             </h2>
 
             {/* Description Text */}
-            <p className="text-primary-text text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light leading-relaxed max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto opacity-80 font-cormorant">
+            <p className="text-text-primary-title text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-light leading-relaxed max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto opacity-80 font-cormorant">
               Once known as Essenden Bungalow, this heritage landmark
               <br className="hidden sm:block" />
               offers a nostalgic journey through Thiruvananthapuram's glorious past
@@ -353,7 +353,8 @@ const Intro: React.FC = () => {
         {videoProgress > 0 && (
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <video
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover border-2 border-text-primary-title"
+
               style={{
                 ...getVideoStyle(),
                 transition: 'all 0.15s ease-out',
@@ -376,8 +377,8 @@ const Intro: React.FC = () => {
                   transition: 'opacity 0.3s ease-out',
                 }}
               >
-                <div className="text-center text-white max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light mb-2 sm:mb-3 md:mb-4 tracking-wide font-playfair">
+                <div className="text-center text-heritage-bg-secondary max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+                  <h3 className="text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-normal mb-2 sm:mb-3 md:mb-5 tracking-wide font-playfair">
                     Discover Amritha Heritage
                   </h3>
                   <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light opacity-80 font-cormorant">
@@ -392,12 +393,7 @@ const Intro: React.FC = () => {
       </div>
 
       {/* Debug info */}
-      <div className="fixed top-2 sm:top-4 right-2 sm:right-4 bg-black/80 text-white p-2 sm:p-3 rounded text-xs sm:text-sm z-50 font-mono max-w-[140px] sm:max-w-none">
-        <div className="hidden sm:block">Scroll Progress: {Math.round(scrollProgress * 100)}%</div>
-        <div className="hidden sm:block">Video Progress: {Math.round(videoProgress * 100)}%</div>
-        <div className="sm:hidden">S:{Math.round(scrollProgress * 100)}% V:{Math.round(videoProgress * 100)}%</div>
-        <div className="hidden md:block">Video Scale: {Math.round((0.2 + videoProgress * 0.8) * 100)}%</div>
-      </div>
+
     </section>
   );
 };

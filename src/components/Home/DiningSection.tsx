@@ -120,7 +120,7 @@ const DiningSection: React.FC = () => {
   // Function removed as it was unused
 
   return (
-    <div className="w-full bg-primary-text">
+    <div className="w-full bg-heritage-bg-secondary ">
       {/* Hero Section with Parallax */}
       <div ref={heroRef} className="relative h-[60vh] overflow-hidden">
         {/* Background image with parallax effect */}
@@ -141,7 +141,7 @@ const DiningSection: React.FC = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h1 className="text-white text-center max-w-4xl font-playfair">
+          <h1 className="text-heritage-bg-secondary text-center max-w-4xl font-playfair">
             <span className="block text-xl md:text-2xl lg:text-3xl font-light leading-tight">
               "Welcome to Kohinoor Restaurant —
             </span>
@@ -154,11 +154,11 @@ const DiningSection: React.FC = () => {
 
       {/* Signature Dishes Carousel */}
       <div className="py-16">
-        <div className="max-w-full mx-auto px-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-center mb-6 text-primary-bg font-playfair">
+        <div className="max-w-full mx-auto px-2">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-center mb-6 text-text-primary-title font-playfair">
             Heritage Dining
           </h2>
-          <p className="text-center text-primary-bg/80 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed mb-12 font-cormorant">
+          <p className="text-center text-text-primary-title/80 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed mb-12 font-cormorant">
             Experience the legendary Kohinoor Restaurant, a star attraction of
             the 1970s Malayalam film world, now revived with a menu that
             perfectly blends European and Indian cuisines in an atmosphere of
@@ -253,10 +253,10 @@ const DiningSection: React.FC = () => {
               {signatureDishes.map((dish) => (
                 <div
                   key={dish.id}
-                  className="flex-none w-[400px] md:w-[450px] lg:w-[500px] h-[600px] bg-white border border-gray-300 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 snap-center select-none relative group rounded-3xl"
+                  className="flex-none w-[250px] md:w-[300px] lg:w-[350px] h-[550px] bg-heritage-bg-secondary border-2  border-text-primary-title overflow-hidden transition-all duration-500 transform hover:-translate-y-3 snap-center select-none relative group rounded-3xl"
                 >
                   {/* Full-screen image */}
-                  <div className="w-full h-full overflow-hidden relative">
+                  <div className="w-full h-full overflow-hidden relative rounded-3xl">
                     <img
                       src={dish.image}
                       alt={dish.name}
@@ -269,14 +269,14 @@ const DiningSection: React.FC = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 
                     {/* Category Badge */}
-                    <div className="absolute top-4 left-4">
+                    {/* <div className="absolute top-4 left-4">
                       <span className="inline-flex items-center gap-1 px-3 py-1 bg-white/90 backdrop-blur-sm text-primary-text rounded-full text-sm font-medium">
                         Heritage Dish
                       </span>
-                    </div>
+                    </div> */}
 
                     {/* Rating */}
-                    <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full">
+                    {/* <div className="absolute top-4 right-4 flex items-center gap-1 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full">
                       <svg
                         className="w-4 h-4 text-yellow-500 fill-current"
                         viewBox="0 0 20 20"
@@ -286,10 +286,10 @@ const DiningSection: React.FC = () => {
                       <span className="text-sm font-medium text-primary-text">
                         4.8
                       </span>
-                    </div>
+                    </div> */}
 
                     {/* Distance/Time */}
-                    <div className="absolute bottom-4 right-4 flex items-center gap-1 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full">
+                    {/* <div className="absolute bottom-4 right-4 flex items-center gap-1 px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full">
                       <svg
                         className="w-4 h-4 text-primary-text/70"
                         fill="none"
@@ -306,7 +306,7 @@ const DiningSection: React.FC = () => {
                       <span className="text-sm font-medium text-primary-text">
                         25 min
                       </span>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Content */}
@@ -320,7 +320,7 @@ const DiningSection: React.FC = () => {
                     </p>
 
                     {/* CTA Button */}
-                    <button className="group/btn inline-flex items-center gap-2 px-6 py-3 bg-primary-text text-white font-semibold rounded-xl hover:bg-primary-text/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary-text/25 transform hover:-translate-y-0.5">
+                    <button className="group/btn inline-flex items-center gap-2 px-6 py-3 border-2  text-heritage-bg-secondary font-semibold rounded-xl hover:bg-button-accent-bg transition-all duration-300 hover:shadow-lg hover: border- shadow-primary-text/25 transform hover:-translate-y-0.5">
                       Order Now
                       <svg
                         className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1"
@@ -443,10 +443,10 @@ const DiningSection: React.FC = () => {
 
         <div className="text-center max-w-4xl mx-auto px-8 relative z-10">
           {/* Hook Content */}
-          <h3 className="text-3xl md:text-4xl lg:text-5xl font-light text-primary-text mb-6 font-playfair">
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-light text-text-primary-title mb-6 font-playfair">
             Ready to Experience Colonial Cuisine?
           </h3>
-          <p className="text-primary-text/80 text-lg md:text-xl lg:text-2xl leading-relaxed mb-12 font-cormorant">
+          <p className="text-text-primary-title/80 text-lg md:text-xl lg:text-2xl leading-relaxed mb-12 font-cormorant">
             From traditional Kerala Sadhya to European fusion dishes, our
             Kohinoor Restaurant menu offers a culinary journey through time.
             Each dish tells a story of heritage and tradition.
@@ -479,7 +479,7 @@ const DiningSection: React.FC = () => {
 
           {/* Bigger Explore Menu Button */}
           <button
-            className="px-12 py-6 text-xl md:text-2xl font-medium border-3 border-primary-text text-primary-text bg-transparent rounded transition-all duration-300 hover:bg-primary-text hover:text-primary-bg transform hover:scale-105 hover:shadow-xl"
+            className="px-12 py-6 text-xl md:text-2xl font-medium text-heritage-bg-secondary bg-button-accent-bg rounded-2xl transition-all duration-300 hover:bg-primary-text hover:text-primary-bg transform hover:scale-105 hover:shadow-xl"
             style={{
               fontFamily: "Work Sans, sans-serif",
               borderWidth: "3px",
@@ -491,7 +491,7 @@ const DiningSection: React.FC = () => {
 
           {/* Decorative Line Below Button */}
           <div className="flex items-center justify-center mt-8">
-            <div className="flex-1 h-px bg-primary-text/20 mx-4"></div>
+            <div className="flex-1 h-px bg-text-primary-title/20 mx-4"></div>
             <svg
               width="20"
               height="20"
@@ -502,18 +502,18 @@ const DiningSection: React.FC = () => {
               <circle cx="50" cy="50" r="8" fill="#514f13" opacity="0.4" />
               <circle cx="50" cy="50" r="3" fill="#514f13" opacity="0.8" />
             </svg>
-            <div className="flex-1 h-px bg-primary-text/20 mx-4"></div>
+            <div className="flex-1 h-px bg-text-primary-title/20 mx-4"></div>
           </div>
         </div>
       </div>
 
       {/* Dining Hall & Kitchen Gallery - 80% screen height with gaps */}
-      <div className="py-16 bg-primary-bg relative">
+      <div className="py-16 bg-text-primary-title relative">
         <div className="mx-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-center text-primary-text mb-6 font-playfair">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-center text-heritage-bg-tertiary mb-6 font-playfair">
             Our Spaces
           </h2>
-          <p className="text-center text-primary-text/80 mb-12 max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl leading-relaxed font-light font-cormorant">
+          <p className="text-center text-heritage-bg-tertiary/80 mb-12 max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl leading-relaxed font-light font-cormorant">
             Step into the grandeur of colonial elegance where every corner tells
             a story. From our heritage dining hall with its majestic
             architecture to our state-of-the-art kitchen where culinary magic
@@ -521,7 +521,7 @@ const DiningSection: React.FC = () => {
             designed to transport you to an era of timeless sophistication.
           </p>
 
-          <div className="relative h-[75vh] border-2 border-primary-text overflow-hidden">
+          <div className="relative h-[70vh] border-2 border-heritage-bg-accent  overflow-hidden rounded-3xl">
             <div
               ref={galleryRef}
               className="flex h-full overflow-x-auto gap-0 scroll-smooth cursor-grab active:cursor-grabbing"
@@ -557,10 +557,10 @@ const DiningSection: React.FC = () => {
                 <div
                   key={image.id}
                   className={`flex-none w-full h-full relative snap-center select-none ${
-                    index > 0 ? "border-l-4 border-primary-bg" : ""
+                    index > 0 ? "" : ""
                   }`}
                 >
-                  <div className="h-full overflow-hidden relative">
+                  <div className="h-full overflow-hidden relative rounded-2xl">
                     <img
                       src={image.src}
                       alt={image.label}
@@ -569,16 +569,16 @@ const DiningSection: React.FC = () => {
                       draggable={false}
                     />
                     {/* Darker overlay for better text readability */}
-                    <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                   </div>
 
                   {/* Text content positioned inside the image */}
-                  <div className="absolute inset-0 flex flex-col justify-center items-start p-12 max-w-2xl">
-                    <h3 className="text-primary-bg text-3xl md:text-5xl font-light mb-4 drop-shadow-xl font-playfair">
+                  <div className="absolute inset-0 flex flex-col justify-center items-start p-12 max-w-2xl bg-text-primary-title">
+                    <h3 className="text-heritage-bg-tertiary text-3xl md:text-5xl font-light mb-4 drop-shadow-xl font-playfair">
                       {image.label}
                     </h3>
-                    <div className="w-16 h-1 bg-gray-800 mb-6 drop-shadow-lg"></div>
-                    <p className="text-primary-bg text-lg md:text-xl leading-relaxed drop-shadow-lg font-light font-cormorant">
+                    <div className="w-16 h-1 bg-button-accent-bg mb-6 drop-shadow-lg"></div>
+                    <p className="text-heritage-bg-tertiary/60 text-lg md:text-xl leading-relaxed drop-shadow-lg font-light font-cormorant">
                       {image.description}
                     </p>
                   </div>
@@ -624,13 +624,13 @@ const DiningSection: React.FC = () => {
       `}</style>
 
       {/* Decorative SVG Element with Extending Lines */}
-      <div className="relative py-16 bg-primary-bg">
+      <div className="relative py-16 bg-text-primary-title">
         <div className="flex items-center justify-center">
           {/* Left Line */}
           <div className="flex-1 h-px bg-gray-300 mx-8"></div>
 
           {/* SVG Element */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 text-text-primary-title ">
             <svg
               width="60"
               height="60"
