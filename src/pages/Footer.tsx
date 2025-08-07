@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Footer() {
   return (
     <footer className="bg-text-primary-title text-heritage-bg-primary py-20">

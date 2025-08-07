@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Dish {
   id: number;
@@ -118,21 +117,7 @@ const DiningSection: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  const scrollDishes = (direction: "left" | "right") => {
-    if (dishesRef.current) {
-      const scrollAmount = 320;
-      const currentScroll = dishesRef.current.scrollLeft;
-      const targetScroll =
-        direction === "left"
-          ? currentScroll - scrollAmount
-          : currentScroll + scrollAmount;
-
-      dishesRef.current.scrollTo({
-        left: targetScroll,
-        behavior: "smooth",
-      });
-    }
-  };
+  // Function removed as it was unused
 
   return (
     <div className="w-full bg-primary-text">

@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const VideoZoomSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLImageElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const VideoZoomSection: React.FC = () => {
       
       // Calculate scroll progress through this section
       const scrollTop = -rect.top;
-      const scrollBottom = scrollTop - windowHeight;
       const scrollRange = sectionHeight - windowHeight;
       
       let progress = 0;

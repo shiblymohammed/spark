@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MapPin, ArrowRight, Clock, Star } from 'lucide-react';
 
 const DestinationSection = () => {
@@ -38,7 +38,7 @@ const DestinationSection = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const cards = entry.target.querySelectorAll('.destination-card');
-            cards.forEach((card, index) => {
+            cards.forEach((_, index) => {
               setTimeout(() => {
                 setVisibleCards(prev => {
                   const newVisible = [...prev];
