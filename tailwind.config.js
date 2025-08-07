@@ -14,7 +14,7 @@ export default {
       },
       colors: {
         'primary-bg': '#f8f6f3',
-        'primary-text': '#514f13',
+        'primary-text': '#3A4A3E',
         'heritage-bg-primary': '#f8f6f3',
         'heritage-bg-secondary': '#514f13',
         'text-primary-title': '#514f13',
