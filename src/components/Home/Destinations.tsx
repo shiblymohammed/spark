@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+// FIXED: Removed unused 'Star' import - only keeping the icons that are actually used in the component
 import { MapPin, ArrowRight, Clock } from "lucide-react";
 
 const DestinationSection = () => {
@@ -186,4 +187,3 @@ const DestinationSection = () => {
 };
 
 export default DestinationSection;
-
