@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { MapPin, ArrowRight, Clock, Star } from "lucide-react";
+import { MapPin, ArrowRight, Clock } from "lucide-react";
 
 const DestinationSection = () => {
   const [visibleCards, setVisibleCards] = useState<boolean[]>([
@@ -186,3 +186,4 @@ const DestinationSection = () => {
 };
 
 export default DestinationSection;
+
